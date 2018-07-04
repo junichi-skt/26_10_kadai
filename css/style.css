@@ -1,0 +1,162 @@
+*{
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+/* スタート画面 */
+label{
+    color:white;
+}
+
+input{    
+    width:50%;
+    text-align:center;
+    border-radius:10px;
+    padding:5px;
+    margin:10px;
+    font-weight:bold;
+}
+
+#go:hover{
+    background-color:black;
+    color:white;
+}
+
+.start-image {
+    background-image:url("../images/sake.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    display:block;
+    position: relative;
+    top: 0;
+    left: 0;
+    max-width: 1200px;
+    width:100vw;
+    height: 100vh;
+}
+
+.enter-area{
+    position:absolute;
+    top: 20vh;
+    left: 50vw;
+    transform: translateY(-50%) translateX(-50%);
+    /* -webkit- transform:translateY(-50%) translateX(-50%); */
+    margin:0 auto;
+    width:50vw;
+    height:auto;
+    background-color:rgba(0,0,0,0.5);
+    text-align:center;
+}
+
+
+
+/* ゲーム画面 */
+
+/* 上下キーによるスクロール防止のための設定 */
+body{
+    overflow: hidden;
+}
+
+/* メニュー部分の設定 */
+.menu-area{
+    max-width:1200px;
+    display:flex;
+    background-color:black;
+    color:white;
+}
+
+.menu-area > div{
+    padding:10px;
+}
+
+#trigger-start{
+    background-color:white;
+    color:black;
+    opacity:0.8;
+}
+
+#trigger-start:hover{
+    background-color:yellow;
+    color:black;
+}
+
+#trigger-stop{
+   background-color:rgb(173, 173, 173);
+   color:black;
+   opacity:0.8; 
+}
+
+#trigger-stop:hover{
+    background-color:red;
+    color:black;
+}
+
+/* ゲーム部分の設定 */
+#canvas-wrap{
+    height:100vh;
+    position: relative;    
+}
+
+#canvas-container{
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 100%;
+}
+
+#canvas{
+    /* background-color: #333; */
+    background: linear-gradient(-160deg, black, #dc53bd);
+}
+
+/* スコアが一定数到達したとき用の画像表示設定 */
+.cover-image {
+    background-image:url("../images/tomio_top.jpeg");
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1200px;
+    height: auto;
+}
+
+.clear-msg{
+    position:absolute;
+    top: 70vh;
+    left: 50vw;
+    transform: translateY(-50%) translateX(-50%);
+    /* -webkit- transform:translateY(-50%) translateX(-50%); */
+    margin:0 auto;
+    width:50vw;
+    height:auto;
+    background-color:rgba(0,0,0,0.5);
+    text-align:center;
+    padding:10px;
+    color:white;
+    border-radius:10px;
+}
+
+.clear-msg > p{
+    color:black;
+    background-color:white;
+}
+
+
+table{
+    width:50vw;
+    border:1px white solid;
+    margin:5px;
+    color:white;
+}
+
+tr{
+    border:1px white solid;
+}
+
+th{
+    border:1px white solid;
+}
+
+td{
+    border:1px white solid;
+} 
